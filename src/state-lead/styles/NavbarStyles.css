@@ -1,0 +1,129 @@
+.NavBar{
+    background-color: #1b1b24 ;
+    height: 350px;
+    padding: 4px;
+}
+
+.NavBar:after {
+    content: '';
+    width: 990px;
+    height: 780px;
+    position: absolute;
+    background: url(https://www.investindia.gov.in/themes/investindia/image/banner-shape.svg) no-repeat right top / contain;
+    right: -15%;
+    top: -45%;
+    display: block;
+    opacity: 0.05;
+    will-change: transform;
+    z-index: 0;
+}
+
+
+
+.subscribe-container {
+    background: #343a40; /* Adjusted to a darker shade for accuracy */
+    padding: 10px 20px;
+    border-radius: 4px; /* Closer to the provided image */
+    align-items: center;
+    gap: 8px; /* Adjust space between elements */
+    width: 30%;
+    height: 20%;
+  }
+
+   .subscribe-container {
+    height: auto;
+    border: 1px solid #302850;
+    border-radius: 10px;
+    background-image: linear-gradient(-34deg, #272c3b 0%, #3f3a52 100%);
+    box-shadow: 0px 4px 13px 0px rgba(26, 24, 29, 0.004);
+    position: relative;
+    z-index: 9;
+    padding: 15px 20px 23px;
+    overflow: hidden;
+   }
+
+    .subscribe-container:before {
+    left: -140px;
+    top: -190px;
+    }
+
+  .subscribe-container:before, .subscribe-container:after {
+    content: "";
+    position: absolute;
+    height: 258px;
+    width: 258px;
+    z-index: -1;
+    background: url(https://www.investindia.gov.in/themes/investindia/image/svg_shape/flower.svg) no-repeat 0 0 / 100%;
+    opacity: 0.4;
+}
+  
+  .subscribe-label {
+    color: #ffffff;
+    margin-right: auto; /* Pushes the email and button to the right */
+    font-size: 1rem; /* Adjust as needed */
+    font-weight: bold; /* Bold font weight for the label */
+  }
+
+  .subscribe-label:before {
+    content: "";
+    background: url(https://www.investindia.gov.in/themes/investindia/image/svg_icon/email.svg) no-repeat 0 0;
+    width: 35px;
+    height: 16px;
+    opacity: 0.4;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    left: -2px;
+    vertical-align: top;
+    margin-top: 5px;
+}
+  
+  .email-input {
+    flex: 1; /* Takes up remaining space */
+    padding: 10px;
+    border: 2px solid #dee2e6; /* Adjusted border color for input */
+    border-radius: 4px 0px 0px 4px;
+    color: #495057; /* Text color for the input */
+    background-color: #ffffff;
+    font-size: 1rem;
+    margin: 4px 0;
+    width: 70%;
+    height: 40px
+  }
+  
+  .subscribe-button {
+    background-color: #f04e23; /* Adjusted to a bold, standout color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer; /* Pointer cursor on hover */
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 0px 4px 4px 0px;
+  }
+  
+  .email-input::placeholder {
+    color: #adb5bd; /* Placeholder text color */
+  }
+  
+  .email-input:focus {
+    outline: none;
+    border-color: #f04e23; /* Adds a highlight effect on focus */
+  }
+  
+  /* Ensuring proper layout on small screens */
+  @media (max-width: 768px) {
+    .subscribe-container {
+      flex-direction: column;
+      gap: 4px;
+    }
+  
+    .subscribe-label,
+    .email-input,
+    .subscribe-button {
+      width: 100%; /* Full width on small screens */
+      box-sizing: border-box; /* Includes padding in the width */
+    }
+  }
+  
